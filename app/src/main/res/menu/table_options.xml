@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/continuegame"
+        android:title="Continue Game"
+    />
+    <item
+        android:id="@+id/viewgraph"
+        android:title="View Current Graph"
+     />
+    <item
+        android:id="@+id/deletetable"
+        android:title="Delete Table"
+    />
+</menu>

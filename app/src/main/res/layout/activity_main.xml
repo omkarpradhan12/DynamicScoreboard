@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradiant_background"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="282dp"
+        android:layout_height="465dp"
+        android:layout_margin="64dp"
+        app:cardBackgroundColor="#C1CFE1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        card_view:cardCornerRadius="15dp"
+        card_view:cardElevation="8dp"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="ExtraText">
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="234dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:text="Login"
+                android:textAlignment="center"
+                android:textColor="#041C32"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.479"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/activity_main_usernameEditText"
+                android:layout_width="259dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="104dp"
+                android:autoSizeTextType="uniform"
+                android:backgroundTint="#5D859F"
+                android:hint="Username"
+                android:inputType="text"
+                android:textColorHint="#5D859F"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.521"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/activity_main_passwordEditText"
+                android:layout_width="258dp"
+                android:layout_height="48dp"
+                android:autoSizeTextType="uniform"
+                android:backgroundTint="#5D859F"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColorHint="#5D859F"
+
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.666"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.41" />
+
+            <Button
+                android:id="@+id/activity_main_loginButton"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="190dp"
+                android:layout_height="47dp"
+                android:forceDarkAllowed="false"
+                android:onClick="log_db"
+                android:text="Login"
+                android:textAllCaps="false"
+                android:textColor="#325288"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.665"
+                app:strokeColor="#7D9FB8"
+                tools:ignore="NotSibling,TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@id/activity_main_loginButton"
+                android:layout_width="190dp"
+                android:layout_height="47dp"
+                android:layout_marginBottom="92dp"
+                android:backgroundTint="#325288"
+                android:onClick="reg"
+                android:text="Registration"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Button
+                android:id="@+id/clearbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="47dp"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="#325288"
+                android:onClick="clr"
+                android:text="Clear"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.871"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="TouchTargetSizeCheck" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

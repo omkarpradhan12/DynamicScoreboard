@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.project_test">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Dynamic Scoreboard"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Project_Test">
+        <activity
+            android:name=".Graph_Display"
+            android:exported="false" />
+        <activity
+            android:name=".ViewGames"
+            android:exported="false"
+            android:label="View Games" />
+        <activity
+            android:name=".RegisterAct"
+            android:exported="false" />
+        <activity
+            android:name=".User_Controls"
+            android:exported="false" />
+        <activity
+            android:name=".Test_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
